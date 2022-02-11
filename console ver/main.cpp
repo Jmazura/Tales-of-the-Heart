@@ -2334,14 +2334,30 @@ int main()
 	   prologue.pick();
 
 	   name = prologue.name;
-	   cath.scene1();
-	   cath.scene2();
-	   cath.scene3();
-	   cath.scene4();
-	   cath.scene5();
-	   cath.scene6();
-
+	   
+	   if(prologue.girl == "1")
+	   {
+	    cath.scene1();
+	    cath.scene2();
+	    cath.scene3();
+	    cath.scene4();
+	    cath.scene5();
+	    cath.scene6();
+	   }
+	   else if(prologue.girl == "2")
+	   {
 	   angel.scene1();
+	   
+	   }
+	   
+	   else if(prologue.girl == "3")
+	   {
+		   
+		
+	   }
+	  
+
+	   
 
 	   cin >> None;
    }
