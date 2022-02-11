@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <conio.h>
@@ -2240,7 +2241,7 @@ public:
 		cout << "\n\n";
 	}
 	
-	int game_over()
+	string game_over()
 	{
 		cout << "Game over shit\n[1] Play again\n[2] Exit\n";
 		getline(cin, play);
