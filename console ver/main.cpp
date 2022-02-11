@@ -368,6 +368,7 @@ class Prologue{
 class Cath
 {
 public:
+	string play;
 	string name;
 	string None;
 	int headhome;
@@ -2238,6 +2239,13 @@ public:
 		Sleep(3000);
 		cout << "\n\n";
 	}
+	
+	int game_over()
+	{
+		cout << "Game over shit\n[1] Play again\n[2] Exit\n";
+		getline(cin, play);
+		return play;
+	};
 };
 
 // Angel Route
@@ -2328,6 +2336,7 @@ int main()
     // Checks if the user wants to play
    if(intro.ask() == 1)
    {
+	   
 	   prologue.scene1();
 	   prologue.scene2();
 	   prologue.scene3();
@@ -2336,13 +2345,18 @@ int main()
 	   name = prologue.name;
 	   
 	   if(prologue.girl == "1")
-	   {
-	    cath.scene1();
-	    cath.scene2();
-	    cath.scene3();
-	    cath.scene4();
-	    cath.scene5();
-	    cath.scene6();
+	   {   
+	    do
+	    {
+		    cath.scene1();
+		    cath.scene2();
+		    cath.scene3();
+		    cath.scene4();
+		    cath.scene5();
+		    cath.scene6();
+	    } while (cath.play == "1");
+		   
+		   
 	   }
 	   else if(prologue.girl == "2")
 	   {
