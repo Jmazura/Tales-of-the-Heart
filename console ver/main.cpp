@@ -2057,6 +2057,186 @@ public:
 		Sleep(3000);
 		cout << "[Cath]: Well when I was a kid about 4 years old...\n"
 			 << endl;
+		
+		cout << "Cath POV\n\n";
+		Sleep(3000);
+		cout << "Cath: Mom, look I draw you, and dad, and me and, Remy.\n\n";
+		Sleep(3000);
+		cout << "Mom: Wow, that's great. *smiles*\n\n";
+		Sleep(3000);
+		cout << "Cath: Thanks mom. I love your reaction. It makes me feel like you appreciate my art.\n\n";
+		Sleep(3000);
+		cout << "Mom: I do Cath. You have such great talent.\n\n";
+		Sleep(3000);
+		cout << "Cath Narrating: Mom was the first person to recognize my talent. When I was in grade school, Mom would make me enter art competitions.\n\n";
+		Sleep(3000);
+		cout << "Host: And the winner for this year's Art contest is… Cathleah Pascual.\n\n";
+		Sleep(3000);
+		cout << "Mom: Yay, you did it. You won.\n\n";
+		Sleep(3000);
+		cout << "Cath: Thanks mom. I can't do it without you supporting me.\n\n";
+		Sleep(3000);
+		cout << "Cath Narrating: But then… 3 years ago…\n\n";
+		Sleep(3000);
+		cout << "Remy: DAD!!! Something is happening to mom.\n\n";
+		Sleep(3000);
+		cout << "Dad: We need to take her to the hospital in a hurry.\n\n";
+		Sleep(3000);
+		cout << "Cath Narrating: We got in the car.\n\n";
+		Sleep(3000);
+		cout << "Cath: Mom? mom… Are you ok mom??? *cries*\n\n";
+		Sleep(3000);
+		cout << "Cath Narrating: Dad, drove us to the hospital. I've never seen him so worked up before. He was probably as scared as us.\n\n";
+		Sleep(3000);
+		cout << "Cath Narrating: We got to the Hospital. The doctors took mom. They put her in the ER… We waited for hours to hear some news about her… It took the doctors 10 hours to get back. We didn't get any sleep.\n\n";
+		Sleep(3000);
+		cout << "Doctor : Are you Luna's family?\n\n";
+		Sleep(3000);
+		cout << "Dad: Yes, I am her husband. Is there any news?\n\n";
+		Sleep(3000);
+		cout << "Doctor: Sir. Your wife is diagnosed with a rare disease. Unfortunately we can't cure her. The capacity of this Hospital isn't enough. We could send her to Canada where they research this disease. She would get more chances of survival in Canada.\n\n";
+		Sleep(3000);
+		cout << "Dad: I'll do anything for her. I'll do anything for my love.\n\n";
+		Sleep(3000);
+		cout << "Doctor: Unfortunately, it would probably cost a lot of money. \n\n";
+		Sleep(3000);
+		cout << "Luna: Dad, Is mom gonna be okay?\n\n";
+		Sleep(3000);
+		cout << "Dad: Yes, Honey. Don't worry, everything's gonna be fine.\n\n";
+		Sleep(3000);
+		cout << "Cath Narrating: They send mom to canada. Dad insisted on staying with us. So my aunt went to Canada with her. It costs us a lot of money. Her maintenance is still costing us until today…\n\n";
+		Sleep(3000);
+		cout << "My father worked two jobs. My sister became a working student. Now she's working full time at the Rhonson's Mall. They told me to study. I insisted on working as well but my dad hated the idea… I pursued studying. I stopped making art. Because I was busy studying. But mostly because I make art for mom, and she's not here.\n\n";
+	
+		Sleep(3000);
+		cout << "End of backstory\n\n";
+
+		Sleep(3000);
+		cout << "MC: You should continue making art.\n\n";
+
+		Sleep(3000);
+		cout << "Cath: Why?\n\n";
+
+		Sleep(3000);
+		cout << "MC: So when your Mom came back. She would see more of your beautiful works.\n\n";
+
+		Sleep(3000);
+		cout << "Cath: Hmmm… Thanks MC… It feels great to let out my feelings.\n\n";
+
+		Sleep(3000);
+		cout << "MC: I want to tell you something.\n\n";
+
+		Sleep(3000);
+		cout << "Cath: What is it?\n\n";
+
+		Sleep(3000);
+		cout << "Choices\n[1] Say I like you\n[2] Say Nevermind";
+
+		string asd;
+		getline(cin, asd);
+		while(true)
+		{
+			if(asd == "1")
+			{
+				
+			}
+			else if(asd == "2")
+			{
+			
+			}
+			
+		}
+
+		Sleep(3000);
+		cout << "MC: Nice to meet you, I am MC.\n\n";
+		Sleep(3000);
+		cout << "Remy: Oh you're MC… I've heard great things about you.\n\n";
+		Sleep(3000);
+		cout << "Inner: Her father said that to me as well. Cath was probably always telling them about me. \n\n";	
+		Sleep(3000);
+		cout << "Remy: Okay. I'll leave you two now. I'll go to my room.\n\n";
+		Sleep(3000);
+		cout << "A mment ago\n\n";
+		Sleep(3000);
+		cout << "Cath: What was it you're gonna ask me?\n\n";
+		Sleep(3000);
+		cout << "MC: Oh. I was gonna ask you if the essay is done.\n\n";
+		Sleep(3000);
+		cout << "Cath: Yes it is.\n\n";
+		Sleep(3000);
+		cout << "MC: Great, I should probably get home.\n\n";
+		Sleep(3000);
+		cout << "Jerome: Wait. We were gonna eat dinner. You should join us.\n\n";
+		Sleep(3000);
+		cout << "Inner: Might as well eat. Abby is probably still partying.\n\n";
+		Sleep(3000);
+		cout << "MC: Thank you sir.\n\n";
+		Sleep(3000);
+		cout << " Dinner at Pascual residence\n\n";
+		Sleep(3000);
+		cout << "Jerome: Cath. How was school?\n\n";
+		Sleep(3000);
+		cout << "Cath: It was fine dad. MC is helping me with our project.\n\n";
+		Sleep(3000);
+		cout << "Jerome: Good.\n\n";
+		Sleep(3000);
+		cout << "*It started raining* //plot convenience rain\n\n";
+		Sleep(3000);
+		cout << "Remy: Oh no it started raining. MC you're gonna get sick if you get home.\n\n";
+		Sleep(3000);
+		cout << "Jerome: I'm so sorry we don't have a car. I can't drive you home. You should probably stay with us until the rain stops.\n\n";
+		Sleep(3000);
+		cout << "MC: It's okay sir.\n\n";
+		Sleep(3000);
+		cout <<" Later\n\n";
+		Sleep(3000);
+		cout << "Inner: Rain still won't stop and it's getting stronger.\n\n";
+		Sleep(3000);
+		cout << "Cath: MC, It's getting late. You should sleep here with us.\n\n";
+		Sleep(3000);
+		cout << "Jerome: You could use my room. I'll just sleep on the couch.\n\n";
+		Sleep(3000);
+		cout << "MC: No sir. I'll sleep on the couch. You already did so much for me. I can't thank you enough.\n\n";
+		Sleep(3000);
+		cout << "Inner: I slept.\n\n";
+		Sleep(3000);
+		cout << "It was the middle of the night. The door in Cath's room suddenly opened. A beautiful lady walked out of the room.\n\n";
+		Sleep(3000);
+		cout << "Cath: Hey MC. Are you awake? *she whispers*\n\n";
+		Sleep(3000);
+		cout << "MC: Huh??? \n\n";
+		Sleep(3000);
+		cout << "Cath: I'm so sorry. I was checking if you're awake.\n\n";
+		Sleep(3000);
+		cout << "MC: Well, I am now. What do you want?\n\n";
+		Sleep(3000);
+		cout << "Cath: Nothing. Can I sit beside you?\n\n";
+		Sleep(3000);
+		cout << "MC: Of course.\n\n";
+		Sleep(3000);
+		cout << "Cath: I just can't sleep. I'm thinking about so many things right now. My mom, meeting assemblies, you, school wor-\n\n";
+		Sleep(3000);
+		cout << "MC: Wait what? You're thinking about me?\n\n";
+		Sleep(3000);
+		cout << "Cath: Wait. Did I say that? I mean yes I did. *she's panicking* Because you're always helping me. And I'm thinking of a way to thank you. \n\n";
+		Sleep(3000);
+		cout << "MC: You don't need to thank me. Being your friend is enough already. I'm so grateful that you became my friend.\n\n";
+		Sleep(3000);
+		cout << "Cath: *Yawns* Same. I feel so comfortable when I'm with you.\n\n";
+		Sleep(3000);
+		cout << "MC: Cath. Can I tell you something?\n\n";
+		Sleep(3000);
+		cout << "I love you… \n\n";
+		Sleep(3000);
+		cout << "Cath: … *She got closer to me*\n\n";
+		Sleep(3000);
+		cout << "MC: Cath?\n\n";
+		Sleep(3000);
+		cout << "Cath: Zzzzz\n\n";
+		Sleep(3000);
+		cout << "Inner: I didn't realize that she fell asleep on my shoulder. She probably didn't hear my confession. I was just sitting there awkwardly while she's asleep. I don't know what to do, I don't want to wake her up either.\n\n";
+		Sleep(3000);
+		cout << "\n\n";
 	}
 };
 
