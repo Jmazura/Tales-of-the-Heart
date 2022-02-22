@@ -2629,7 +2629,44 @@
 						 << endl;
 					cout << "[Angel]: I'm Angel Walton from 2-A\n"
 						 << endl;
-					break;
+					Sleep(3000);
+					cout << "Responses:\n[1] Escort her to the faculty Room.\n[2] Go to the Cafeteria, Alone" << endl;
+					getline(cin, None);
+
+					while (true)
+					{
+						if (None == "1")
+						{
+							Sleep(3000);
+							cout << "[Angel]: So you are a freshman right? Want me to tour you around the school grounds?\n"
+								 << endl;
+							Sleep(3000);
+							cout << "Responses:\n[1] Affirmative\n[2] Not now, I'm busy." << endl;
+							getline(cin, None);
+
+							while (true)
+							{
+								if (None == "1")
+								{
+									Sleep(3000);
+									cout << "[Angel]: so have you gotten use to your new school?\n"
+										 << endl;
+									Sleep(3000);
+									cout << "[MC]: Yeah thanks to you I kinda know now every corner of the school. *Stomach Growling*\n"
+										 << endl;
+								}
+							}
+						}
+						else if (None == "2")
+						{
+							break;
+						}
+						else
+						{
+							cout << "Not an Option\n Please choose a valid option\n\nOptuon: " << endl;
+							getline(cin, None);
+						}
+					}
 				}
 				else if (None == "2")
 				{
