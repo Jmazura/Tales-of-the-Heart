@@ -7,18 +7,13 @@ pygame.init()
 # Creating Game Window
 WIN = pygame.display.set_mode((WIN_SIZE[0],WIN_SIZE[1]))
 pygame.display.set_caption(TITLE) # The title
+#pygame.display.set_icon(pygame.image.load("/Assests/"))
 clock = pygame.time.Clock() # This will help keep our game not running at full speed
 running = True # This will just make our game run
 
 gameInstance = "MENU" # Still not sure why I added this but it will help transitioning from one game instance to another
 
-
-# This just group the sprites or objects
-all_sprites = pygame.sprite.Group()
-
-
-menu_sprite = pygame.sprite.Group()
-menuu = menu(menu_sprite)
+MENU = Menu()
 
 # The life of our game the Loop it will help the game run forever until we close it of course
 while(running):
@@ -37,14 +32,11 @@ while(running):
     # Filles the window with black
     WIN.fill((0,0,0))
 
-    all_sprites.draw(WIN)
 
         # If the game instance is in the menu then print the menu xd still not finish
     if gameInstance == "MENU":
-        menu_sprite.draw(WIN)
-        menu_sprite.update()
-
-    all_sprites.update()
+        MENU.draw(WIN)
+        MENU.update()
 
 
     # Drawing the cath obj that we created earlier

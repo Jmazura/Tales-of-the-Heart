@@ -1,27 +1,23 @@
 import pygame
 
-class BasicButton(pygame.sprite.Sprite):
-    def __init__(self, img, posx, posy):
-        pygame.sprite.Sprite.__init__(self)
-        self.image = img
-    #    self.image = pygame.Surface((200,200))
-    #    self.image.fill((0,255,0))
-        self.rect = self.image.get_rect()
-        self.rect.center = (posx, posy)
+class BasicButton:
+    def __init__(self, img, pos, txt=False, text="", font=None, color=(75,75,75)):
+        self.img = img
+        self.img_Rect = self.img.get_rect()
+        self.img_Rect.center = pos
 
-    def draw(self):
-        pass
-
-    def update(self):
-        pass
+        if txt==True:
+            self.text = font.render(text,  False, color)
+            self.textR = self.text.get_rect()
+            self.textR.center = self.img_Rect.center
 
 
-class Button(pygame.sprite.Sprite):
-    def __init__(self):
-        pass
+    def add_text(self):
+        return self.text
 
-    def draw(self):
-        pass
 
-    def update(self):
-        pass
+    def get_image(self):
+        return self.img
+
+    def get_rect(self):
+        return self.img_Rect

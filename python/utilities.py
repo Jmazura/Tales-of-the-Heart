@@ -1,6 +1,8 @@
 import os
 import pygame
 
+pygame.init()
+
 # Don't mind this it will just help to load images in our game
 # If you want me to explain it well tell me xd
 class Img:
@@ -27,3 +29,17 @@ class Img:
 			self.assests[i] = self.getImg(self.assests_dir[i])
 			#print(self.button_assests_dir[i])
 		return self.assests
+
+class Font:
+	def __init__(self):
+		pass
+
+	def draw(self, font, text, color, pos, surf):
+		self.text = self.font.render(text, False, color)
+		self.rect = self.text.get_rect()
+		self.rect.center = pos
+		surf.blit(self.text, self.rect)
+
+	def load_font(self, path, size):
+		self.font = pygame.font.Font(path, size)
+		return self.font
