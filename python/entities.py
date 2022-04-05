@@ -1,4 +1,3 @@
-from settings import *
 
 class Cath(pygame.sprite.Sprite):
     def __init__(self):

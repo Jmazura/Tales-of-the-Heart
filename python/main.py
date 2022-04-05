@@ -1,14 +1,8 @@
 from settings import * # Adding all the variables in the setting file
-from utilities import Img
+from instances import *
+from uis import *
 # Initializing libs
 pygame.init()
-
-# The image loader we created at the ulilities file
-img = Img()
-
-# Created an Object for the IMG
-cath = img.getimg("❤️ Cath/Cath Angery Blush.png")
-
 
 # Creating Game Window
 WIN = pygame.display.set_mode((WIN_SIZE[0],WIN_SIZE[1]))
@@ -21,6 +15,10 @@ gameInstance = "MENU" # Still not sure why I added this but it will help transit
 
 # This just group the sprites or objects
 all_sprites = pygame.sprite.Group()
+
+
+menu_sprite = pygame.sprite.Group()
+menuu = menu(menu_sprite)
 
 # The life of our game the Loop it will help the game run forever until we close it of course
 while(running):
@@ -39,14 +37,18 @@ while(running):
     # Filles the window with black
     WIN.fill((0,0,0))
 
+    all_sprites.draw(WIN)
 
-
-    # If the game instance is in the menu then print the menu xd still not finish
+        # If the game instance is in the menu then print the menu xd still not finish
     if gameInstance == "MENU":
-        print("Menu")
+        menu_sprite.draw(WIN)
+        menu_sprite.update()
+
+    all_sprites.update()
+
 
     # Drawing the cath obj that we created earlier
-    WIN.blit(cath,(15,15))
+#WIN.blit(cath,(15,15))
 
 
 # Update every object in our game
