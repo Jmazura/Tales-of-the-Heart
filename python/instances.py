@@ -25,14 +25,45 @@ class Menu:
 
 
     def draw(self, surf):
-        surf.blit(bg, (0,0))
+    #    surf.blit(bg, (0,0))
         for i in self.buttons:
             i.draw(surf)
 
     def update(self):
-        #print(self.buttons[0].get_rect())
-        pass
+        self.running = True
+        self.gameInstance = "MENU"
+        rect = self.buttons[3].get_rect()
+        mouse = pygame.mouse.get_pos()
 
-class Setting:
+        if rect[0] < mouse[0] and rect[0]+rect[2] > mouse[0]:
+            if rect[1] < mouse[1] and rect[1]+rect[3] > mouse[1]:
+                pressed = pygame.mouse.get_pressed()
+                if pressed == (1,0,0):
+                    self.running = False
+
+        rect1 = self.buttons[2].get_rect()
+        if rect1[0] < mouse[0] and rect1[0]+rect1[2] > mouse[0]:
+            if rect1[1] < mouse[1] and rect1[1]+rect1[3] > mouse[1]:
+                pressed = pygame.mouse.get_pressed()
+                if pressed == (1,0,0):
+                    self.gameInstance = "Credits"
+
+
+
+class Credits:
     def __init__(self):
-        pass
+        self.b = BasicButton(UIsG[2], GRID[11][2], True, "BACK", font1)
+
+    def draw(self, surf):
+        self.b.draw(surf)
+
+    def update(self):
+        self.gameInstance = "Credits"
+        mouse = pygame.mouse.get_pos()
+        rect = self.b.get_rect()
+        if rect[0] < mouse[0] and rect[0]+rect[2] > mouse[0]:
+            if rect[1] < mouse[1] and rect[1]+rect[3] > mouse[1]:
+                pressed = pygame.mouse.get_pressed()
+                if pressed == (1,0,0):
+                    print("WOKRIGN")
+                    self.gameInstance = "MENU"
