@@ -26,3 +26,13 @@ class BasicButton:
 
     def get_rect(self):
         return self.img_Rect
+
+    def get_pressed(self):
+        mouse = pygame.mouse.get_pos()
+        if self.img_Rect[0] < mouse[0] and self.img_Rect[0]+self.img_Rect[2] > mouse[0]:
+            if self.img_Rect[1] < mouse[1] and self.img_Rect[1]+self.img_Rect[3] > mouse[1]:
+                pressed = pygame.mouse.get_pressed()
+                if pressed == (1,0,0):
+                    return True
+                else:
+                    return False

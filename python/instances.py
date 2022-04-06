@@ -32,21 +32,12 @@ class Menu:
     def update(self):
         self.running = True
         self.gameInstance = "MENU"
-        rect = self.buttons[3].get_rect()
-        mouse = pygame.mouse.get_pos()
 
-        if rect[0] < mouse[0] and rect[0]+rect[2] > mouse[0]:
-            if rect[1] < mouse[1] and rect[1]+rect[3] > mouse[1]:
-                pressed = pygame.mouse.get_pressed()
-                if pressed == (1,0,0):
-                    self.running = False
+        if self.buttons[3].get_pressed() == True:
+            self.running = False
 
-        rect1 = self.buttons[2].get_rect()
-        if rect1[0] < mouse[0] and rect1[0]+rect1[2] > mouse[0]:
-            if rect1[1] < mouse[1] and rect1[1]+rect1[3] > mouse[1]:
-                pressed = pygame.mouse.get_pressed()
-                if pressed == (1,0,0):
-                    self.gameInstance = "Credits"
+        if self.buttons[2].get_pressed() == True:
+            self.gameInstance = "Credits"
 
 
 
@@ -59,11 +50,15 @@ class Credits:
 
     def update(self):
         self.gameInstance = "Credits"
-        mouse = pygame.mouse.get_pos()
-        rect = self.b.get_rect()
-        if rect[0] < mouse[0] and rect[0]+rect[2] > mouse[0]:
-            if rect[1] < mouse[1] and rect[1]+rect[3] > mouse[1]:
-                pressed = pygame.mouse.get_pressed()
-                if pressed == (1,0,0):
-                    print("WOKRIGN")
-                    self.gameInstance = "MENU"
+        if self.b.get_pressed() == True:
+            self.gameInstance = "MENU"
+
+class Pics:
+    def __init__(self):
+        pass
+
+    def draw(self, surf):
+        pass
+
+    def update(self):
+        pass

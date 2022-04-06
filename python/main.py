@@ -46,6 +46,9 @@ while(running):
         CREDITS.update()
         gameInstance = CREDITS.gameInstance
 
+    if gameInstance == "PICS":
+        pass
+
 
     # Drawing the cath obj that we created earlier
 #WIN.blit(cath,(15,15))
