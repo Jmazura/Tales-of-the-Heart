@@ -14,6 +14,7 @@ running = True # This will just make our game run
 gameInstance = "MENU" # Still not sure why I added this but it will help transitioning from one game instance to another
 
 MENU = Menu()
+CREDITS = Credits()
 
 # The life of our game the Loop it will help the game run forever until we close it of course
 while(running):
@@ -37,6 +38,16 @@ while(running):
     if gameInstance == "MENU":
         MENU.draw(WIN)
         MENU.update()
+        running = MENU.running
+        gameInstance = MENU.gameInstance
+
+    if gameInstance == "Credits":
+        CREDITS.draw(WIN)
+        CREDITS.update()
+        gameInstance = CREDITS.gameInstance
+
+    if gameInstance == "PICS":
+        pass
 
 
     # Drawing the cath obj that we created earlier
