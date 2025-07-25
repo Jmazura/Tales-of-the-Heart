@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0ont2dfhwmjo"]
+[gd_scene load_steps=5 format=3 uid="uid://c0ont2dfhwmjo"]
 
 [ext_resource type="Texture2D" uid="uid://j00xwj5mui6e" path="res://TESTING/bg-test.png" id="1_nqxm2"]
+[ext_resource type="PackedScene" uid="uid://6xtnv3x7yqts" path="res://Scenes/Entities/Player.tscn" id="2_kx2cw"]
 
 [sub_resource type="Gradient" id="Gradient_nqxm2"]
 colors = PackedColorArray(0, 0, 0, 0.576471, 0, 0, 0, 0.576471)
@@ -11,6 +12,7 @@ gradient = SubResource("Gradient_nqxm2")
 [node name="GameController" type="Node2D"]
 
 [node name="root" type="Node2D" parent="."]
+visible = false
 
 [node name="Canvas-Background" type="Node2D" parent="root"]
 
@@ -40,3 +42,5 @@ text = "The Text Gose Here"
 
 [node name="Camera2D" type="Camera2D" parent="root"]
 zoom = Vector2(1.5, 1.5)
+
+[node name="Player" parent="." instance=ExtResource("2_kx2cw")]
