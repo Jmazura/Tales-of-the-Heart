@@ -35,4 +35,4 @@ func _process(delta: float) -> void:
 			anim.play("walk_up")
 			last_direction = "up"
 	else:
-		anim.play("idle_" + last_direction)
+		anim.play("idle")
