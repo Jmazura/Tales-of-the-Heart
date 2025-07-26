@@ -1,7 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwstfdsf8dqss"]
+[gd_scene load_steps=4 format=3 uid="uid://cwstfdsf8dqss"]
 
-[ext_resource type="PackedScene" uid="uid://c0ont2dfhwmjo" path="res://Scenes/game_controller.tscn" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://b28ysl2hdp673" path="res://TESTING/World1.png" id="1_8gbba"]
+[ext_resource type="PackedScene" uid="uid://6xtnv3x7yqts" path="res://Scenes/Entities/Player.tscn" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://c0ont2dfhwmjo" path="res://Scenes/Manager.tscn" id="1_jjgbg"]
 
 [node name="Main" type="Node2D"]
 
-[node name="GameController" parent="." instance=ExtResource("1_jjgbg")]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(24, 1)
+texture = ExtResource("1_8gbba")
+
+[node name="Player" parent="." instance=ExtResource("1_bo1nx")]
+
+[node name="Manager" parent="." instance=ExtResource("1_jjgbg")]
+visible = false
